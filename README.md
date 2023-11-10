@@ -21,3 +21,5 @@ make init
 | make analyse | 静的解析とフォーマッターを動かします   |
 
 ### discord と連携しています
+
+テスト
