@@ -19,4 +19,3 @@ make init
 | make down    | コンテナを落とします                   |
 | make api     | コンテナの中に入ります                 |
 | make analyse | 静的解析とフォーマッターを動かします   |
-| make test    | テストを実行します                     |
