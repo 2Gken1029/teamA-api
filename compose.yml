@@ -1,0 +1,29 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.0
+    ports:
+      - "3305:3305"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: teamA-project
+    volumes:
+      - ./docker/mysql/data:/var/lib/mysql
+      - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
+    networks:
+      - teamA-net
+  api-php:
+    build: ./docker/php
+    ports:
+      - "9010:90"
+    volumes:
+      - ./src/:/var/www/html
+    networks:
+      - teamA-net
+
+networks:
+  teamA-net:
+    driver: bridge
+    name: teamA-network
