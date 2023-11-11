@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:8.0
     ports:
-      - "3306:3306"
+      - "3308:3308"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: user
@@ -17,7 +17,7 @@ services:
   api-php:
     build: ./docker/php
     ports:
-      - "9010:90"
+      - "9010:80"
     volumes:
       - ./src/:/var/www/html
     networks:
