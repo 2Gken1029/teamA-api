@@ -4,7 +4,6 @@ init:
 	docker compose exec api-php composer install
 	docker compose exec api-php php artisan key:generate
 	docker compose exec api-php php artisan storage:link
-	cp .githooks/pre-commit .git/hooks/pre-commit  
 
 analyse:
 	@echo "コードの静的解析・フォーマットを行います"
