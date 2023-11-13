@@ -21,3 +21,8 @@ make init
 | make analyse | 静的解析とフォーマッターを動かします   |
 
 ### discord と連携しています
+commit、プルリクなどのイベントが起きれば、ディスコードの当該チャンネルに通知がいきます。
+
+## 推奨ツール
+- [Sequel Ace](https://apps.apple.com/jp/app/sequel-ace/id1518036000?mt=12)
+- [postman](https://www.postman.com/)
