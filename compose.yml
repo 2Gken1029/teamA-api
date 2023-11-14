@@ -26,5 +26,4 @@ services:
 networks:
   teamA-first-net:
     driver: bridge
-    external: true
     name: teamA-first-network
