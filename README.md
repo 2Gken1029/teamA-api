@@ -9,7 +9,7 @@ make init
 ```
 
 - 以下 URL が api のパス <br>
-  localhost:9010
+  [localhost:9010](http://localhost:9010/)
 
 ## make コマンド一覧
 
